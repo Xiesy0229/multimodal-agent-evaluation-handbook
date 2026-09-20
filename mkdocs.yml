@@ -1,0 +1,91 @@
+site_name: 多模态 Agent 评测学习手册
+site_description: 从模型评测基础到多模态 Agent 评测系统搭建的个人学习知识库
+site_author: Luna Xie
+site_url: https://xiesy0229.github.io/multimodal-agent-evaluation-handbook/
+repo_url: https://github.com/Xiesy0229/multimodal-agent-evaluation-handbook
+repo_name: Xiesy0229 / multimodal-agent-evaluation-handbook
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: luna-light
+      toggle:
+        icon: material/weather-night
+        name: 切换至深色模式
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至浅色模式
+  font:
+    text: Noto Sans SC
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tooltips
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid@11/dist/mermaid.min.js
+  - assets/javascripts/mermaid.js
+
+nav:
+  - 开始这里:
+      - 首页: index.md
+      - 初学者学习路线: learning-path.md
+  - 基础概念:
+      - 什么是模型评测: foundations/model-evaluation.md
+      - Agent 与 Harness: foundations/agent-and-harness.md
+  - 评测系统:
+      - 总体结构: system/overview.md
+      - Transcript 执行轨迹: system/transcript.md
+      - Strategy 与三种行动: system/strategy-actions.md
+      - Outcome 与 Grader: system/outcome-grader.md
+      - 指标与稳定性: system/metrics.md
+  - 动手实践:
+      - 跌倒预警完整案例: practice/fall-detection.md
+      - 从零搭建最小评测: practice/build-minimum-eval.md
+  - 术语表: glossary.md
+
+copyright: 个人学习笔记 · Luna Xie · 持续更新中

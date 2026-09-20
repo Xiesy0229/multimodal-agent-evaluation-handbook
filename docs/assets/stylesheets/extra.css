@@ -1,0 +1,207 @@
+:root {
+  --luna-ink: #51465b;
+  --luna-muted: #887b8f;
+  --luna-pink: #f8edf5;
+  --luna-pink-strong: #d99fc4;
+  --luna-lilac: #eee7f8;
+  --luna-line: #e7dce8;
+  --luna-paper: #fffafc;
+}
+
+[data-md-color-scheme="luna-light"] {
+  --md-primary-fg-color: #7c667f;
+  --md-primary-fg-color--light: #a58da8;
+  --md-primary-fg-color--dark: #5c4b60;
+  --md-accent-fg-color: #c071a7;
+  --md-default-bg-color: #fffafc;
+  --md-default-fg-color: #51465b;
+  --md-typeset-a-color: #9d5f8a;
+  --md-code-bg-color: #f7f0f7;
+}
+
+body {
+  background-image: radial-gradient(circle at 1px 1px, rgba(170, 143, 171, 0.13) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.md-header {
+  backdrop-filter: blur(18px);
+  background: color-mix(in srgb, var(--md-default-bg-color) 88%, transparent);
+  color: var(--md-default-fg-color);
+  border-bottom: 1px solid var(--luna-line);
+  box-shadow: none;
+}
+
+.md-tabs {
+  background: color-mix(in srgb, var(--md-default-bg-color) 92%, transparent);
+  color: var(--md-default-fg-color);
+}
+
+.md-main__inner {
+  margin-top: 1rem;
+}
+
+.md-content__inner {
+  background: color-mix(in srgb, var(--md-default-bg-color) 94%, transparent);
+  border: 1px solid color-mix(in srgb, var(--luna-line) 82%, transparent);
+  border-radius: 24px;
+  padding: clamp(1.2rem, 3vw, 2.4rem);
+  box-shadow: 0 18px 56px rgba(108, 82, 111, 0.07);
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  color: var(--md-default-fg-color);
+  letter-spacing: -0.02em;
+}
+
+.md-typeset h1 {
+  font-weight: 650;
+}
+
+.luna-hero {
+  position: relative;
+  overflow: hidden;
+  margin: -0.7rem -0.7rem 2rem;
+  padding: clamp(2rem, 6vw, 4.5rem);
+  border: 1px solid var(--luna-line);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 88% 20%, rgba(238, 213, 233, 0.85), transparent 30%),
+    radial-gradient(circle at 10% 90%, rgba(231, 223, 247, 0.85), transparent 36%),
+    linear-gradient(145deg, #fffafd, #fbf3f8);
+}
+
+.luna-hero::after {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  right: -80px;
+  bottom: -120px;
+  border: 1px solid rgba(198, 161, 192, 0.35);
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.7);
+}
+
+.luna-hero h1 {
+  max-width: 760px;
+  margin-top: 0.5rem;
+  font-size: clamp(2.1rem, 5vw, 4rem);
+  line-height: 1.08;
+}
+
+.luna-hero > p {
+  max-width: 760px;
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.eyebrow {
+  color: var(--luna-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.maturity-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1.5rem;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0 0.35rem 0.7rem 0;
+  padding: 0.28rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 650;
+  vertical-align: middle;
+}
+
+.status::before {
+  content: "";
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.status.understood {
+  color: #6b637f;
+  background: #eeeaf7;
+}
+
+.status.validating {
+  color: #9a5c7f;
+  background: #f8e9f1;
+}
+
+.status.todo {
+  color: #7d7082;
+  background: #f1edf1;
+}
+
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > ol > li {
+  border-color: var(--luna-line);
+  border-radius: 20px;
+  background: color-mix(in srgb, var(--md-default-bg-color) 94%, var(--luna-pink));
+  box-shadow: none;
+}
+
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > ol > li:hover {
+  border-color: var(--luna-pink-strong);
+  box-shadow: 0 12px 30px rgba(112, 84, 114, 0.08);
+}
+
+.md-typeset .md-button {
+  border-radius: 999px;
+}
+
+.md-typeset table:not([class]) {
+  border-radius: 14px;
+  box-shadow: none;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 14px;
+  box-shadow: none;
+}
+
+.mermaid {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 76.234375em) {
+  .md-content__inner {
+    border-radius: 18px;
+  }
+}
+
+@media screen and (max-width: 44.984375em) {
+  .md-content__inner {
+    margin: 0 -0.4rem;
+    padding: 1rem;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+  }
+
+  .luna-hero {
+    margin: -0.2rem -0.2rem 1.5rem;
+    padding: 1.6rem 1.2rem;
+    border-radius: 20px;
+  }
+}
+
