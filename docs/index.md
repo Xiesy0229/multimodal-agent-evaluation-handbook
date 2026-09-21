@@ -11,6 +11,7 @@ title: 首页
 这是一个从个人提问出发、持续生长的学习知识库。它帮助初学者把“模型效果好不好”，一步步拆成可以设计、运行、记录、评分和复现的评测系统。
 
 [开始学习](learning-path.md){ .md-button .md-button--primary }
+[查看今日多模态模型情报](daily-learning/2026-09-22-multimodal-news.md){ .md-button }
 [查看完整流程](system/overview.md){ .md-button }
 
 <div class="maturity-legend">
@@ -84,4 +85,3 @@ flowchart TD
 `Transcript` · `Speak` · `Silence` · `Delegate` · `Outcome` · `Grader` · `Fallback` · `Pass@k`
 
 每个结果会带你进入一个可以独立理解、又与上下游概念相连接的页面。
-
