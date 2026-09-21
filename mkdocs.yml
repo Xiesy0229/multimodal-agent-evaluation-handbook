@@ -89,6 +89,8 @@ nav:
   - 动手实践:
       - 跌倒预警完整案例: practice/fall-detection.md
       - 从零搭建最小评测: practice/build-minimum-eval.md
+  - 每日学习:
+      - 2026-09-22｜GitHub 学习记录工作流: daily-learning/2026-09-22-github-contribution-workflow.md
   - 术语表: glossary.md
 
 copyright: 个人学习笔记 · Luna Xie · 持续更新中
