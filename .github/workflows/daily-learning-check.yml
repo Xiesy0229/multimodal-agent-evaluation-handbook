@@ -1,0 +1,30 @@
+name: Daily learning checkpoint
+
+on:
+  schedule:
+    # 20:00 Asia/Shanghai (12:00 UTC)
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Check today's learning note
+        shell: bash
+        run: |
+          today="$(TZ=Asia/Shanghai date +%F)"
+          pattern="docs/daily-learning/${today}*.md"
+          if compgen -G "$pattern" > /dev/null; then
+            echo "✅ Found a learning note for $today"
+            printf '### Daily learning checkpoint\n\nFound: `%s`\n' "$pattern" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "ℹ️ No learning note found for $today yet"
+            printf '### Daily learning checkpoint\n\nNo note found for `%s` yet. Add a real learning note when you have something to record.\n' "$today" >> "$GITHUB_STEP_SUMMARY"
+          fi
