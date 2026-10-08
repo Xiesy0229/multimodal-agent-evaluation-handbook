@@ -14,6 +14,7 @@
 
 除了学习笔记，这里也整理我用于 T2V/T2AV 成对视频评测的通用方法：从数据审计和人工 GT，到人员可靠性、评分强度偏差、题目等权统计与 Badcase 证据分析。
 
+- [可视化视频评测工作台](https://xiesy0229.github.io/multimodal-agent-evaluation-handbook/video-workbench/)
 - [我如何开展成对视频评测](docs/practice/pairwise-video-evaluation.md)
 - [我如何用 Skill 辅助评测](docs/practice/evaluation-skill.md)
 - [可复用的 GSB Skill](skills/analyze-pairwise-video-evals/SKILL.md)
