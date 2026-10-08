@@ -89,6 +89,9 @@ nav:
   - 动手实践:
       - 跌倒预警完整案例: practice/fall-detection.md
       - 从零搭建最小评测: practice/build-minimum-eval.md
+  - 我的评测方法:
+      - T2V/T2AV 成对视频评测: practice/pairwise-video-evaluation.md
+      - Skill 如何辅助评测: practice/evaluation-skill.md
   - 每日学习:
       - 记录说明: daily-learning/README.md
       - 2026-09-22｜GitHub 学习记录工作流: daily-learning/2026-09-22-github-contribution-workflow.md
