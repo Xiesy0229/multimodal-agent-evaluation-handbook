@@ -14,7 +14,7 @@
 
 Skill 面向“文本 + 静态参考图”的 R2V 题集准备，协助整理题目和图片素材、记录标签/考察依据/来源、检查任务在目标时长内是否可执行，并按可配置规则校验语言、镜头类型、风格和参考图数量等覆盖情况。提供本地 Python 校验器，帮助检查配置、数据结构、素材引用和完整性；建议先做小样，再扩充题集。
 
-[查看 Skill 文件与使用说明](../../skills/r2v-eval-set-builder/README.md)
+[查看 Skill 文件与使用说明](https://github.com/Xiesy0229/multimodal-agent-evaluation-handbook/tree/main/skills/r2v-eval-set-builder)
 
 ## 端到端工作方式
 
