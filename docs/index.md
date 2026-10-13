@@ -8,9 +8,10 @@ title: 首页
 
 # 从零理解多模态 Agent 评测
 
-这是一个从个人提问出发、持续生长的学习知识库。它帮助初学者把“模型效果好不好”，一步步拆成可以设计、运行、记录、评分和复现的评测系统。
+这是一个从个人提问出发、持续生长的学习知识库。它帮助初学者把“模型效果好不好”，一步步拆成可以设计、运行、记录、评分和复现的评测系统；同时收录多模态生成模型产品与评测入门，串联需求拆解、生成质量、美学数据、体验设计与业务验证。
 
 [开始学习](learning-path.md){ .md-button .md-button--primary }
+[产品与评测入门](learning-notes/multimodal-product-evaluation-field-guide.md){ .md-button }
 [查看今日多模态模型情报](daily-learning/2026-09-22-multimodal-news.md){ .md-button }
 [查看完整流程](system/overview.md){ .md-button }
 
