@@ -1,0 +1,69 @@
+Warning: fs was declared with const; use let for reassignable variables.
+{
+  "version": "1.0.0",
+  "total_cases": 150,
+  "pilot_cases": 12,
+  "duration_s": 10,
+  "languages": {"zh": 75, "en": 75},
+  "shot_modes": {"single": 75, "multi": 75},
+  "max_shots": 15,
+  "styles": {
+    "user_casual": 60,
+    "natural_detailed": 50,
+    "structured": 34,
+    "ultra_long": 6
+  },
+  "ultra_long": {
+    "language": "zh",
+    "min_han": 2000,
+    "max_han": 3000
+  },
+  "reference_counts": {
+    "1": 30, "2": 25, "3": 20, "4": 16, "5": 14,
+    "6": 10, "7": 8, "8": 7, "9": 6, "10": 5,
+    "11": 1, "12": 1, "13": 1, "14": 1, "15": 1,
+    "16": 1, "17": 1, "18": 1, "20": 1
+  },
+  "boundary_threshold": 10,
+  "boundary_cases": 9,
+  "distinct_boundary_types": 9,
+  "rewrite_cases": 6,
+  "daily_human_minimum": 20,
+  "subject_minimums": {
+    "human": 1,
+    "animal_creature": 1,
+    "multi_subject": 1,
+    "object": 1,
+    "natural_landscape": 1,
+    "built_space": 1,
+    "abstract": 1,
+    "anime_fantasy": 1,
+    "text_primary": 1
+  },
+  "capability_minimums": {
+    "multi_subject_action": 1,
+    "expression_physiology": 1,
+    "physics_material": 1,
+    "temporal_motion": 1,
+    "camera_control": 1,
+    "lighting_style": 1,
+    "multi_shot_narrative": 1,
+    "commercial_design": 1,
+    "text_layout": 1,
+    "spatial_composition": 1,
+    "counting": 5,
+    "negation": 5,
+    "concept_combination": 5,
+    "safety_compliance": 3
+  },
+  "source_types": ["arena", "past_hardcase", "user_prompt", "business", "handwritten"],
+  "review_dimensions": [
+    "ten_second_feasibility",
+    "reference_alignment",
+    "prompt_label_alignment",
+    "language_naturalness",
+    "semantic_dedup"
+  ],
+  "allowed_image_extensions": [".jpg", ".jpeg", ".png", ".webp"],
+  "upload_required": false
+}
