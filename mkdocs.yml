@@ -89,6 +89,7 @@ nav:
   - 动手实践:
       - 跌倒预警完整案例: practice/fall-detection.md
       - 从零搭建最小评测: practice/build-minimum-eval.md
+      - R2V Arena 视频生成评测: practice/r2v-arena.md
   - 我的评测方法:
       - 视频评测工作台: practice/video-workbench.md
       - T2V/T2AV 成对视频评测: practice/pairwise-video-evaluation.md
