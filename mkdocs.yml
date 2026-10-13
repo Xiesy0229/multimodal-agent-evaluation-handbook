@@ -1,5 +1,5 @@
 site_name: 多模态 Agent 评测学习手册
-site_description: 从模型评测基础到多模态 Agent 评测系统搭建的个人学习知识库
+site_description: 从模型评测基础、多模态生成模型产品与评测，到多模态 Agent 评测系统搭建的个人学习知识库
 site_author: Luna Xie
 site_url: https://xiesy0229.github.io/multimodal-agent-evaluation-handbook/
 repo_url: https://github.com/Xiesy0229/multimodal-agent-evaluation-handbook
@@ -77,6 +77,7 @@ nav:
   - 开始这里:
       - 首页: index.md
       - 初学者学习路线: learning-path.md
+      - 多模态产品与评测入门: learning-notes/multimodal-product-evaluation-field-guide.md
   - 基础概念:
       - 什么是模型评测: foundations/model-evaluation.md
       - Agent 与 Harness: foundations/agent-and-harness.md
