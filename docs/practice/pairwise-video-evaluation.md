@@ -6,6 +6,8 @@ T2V 是文本生成视频，T2AV 是文本生成音视频。前者主要看画�
 
 [打开视频评测工作台：看流程、对比视频、记录判断](https://xiesy0229.github.io/multimodal-agent-evaluation-handbook/video-workbench/)
 
+**配套质检流程：**[查看视频评测质检闭环](video-evaluation-quality-control.md)，了解数据检查、GT 确认、人员质检、结果核对与交付。
+
 ## 先用一个例子理解
 
 Prompt 要求“一名舞者连贯地转身”。我先分别看 A、B，再判断目标能力：
